@@ -1,0 +1,80 @@
+:root {
+ --blue :#2C2546;
+ --dark-blue :#181535;
+ --green :aqua;
+ --white :white
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border.box;
+  font-family: Tahoma;
+}
+body {
+  background-color: var(--dark-blue) ;
+  color: var(--white);
+}
+
+header {
+
+  position: fixed;
+  width: 100%;
+  font-weight:bold ;
+  justify-content:center;
+  text-align: center;
+  background-color: var(--blue);
+  padding: 2%;
+  top: 0;
+}
+
+.title {
+  color: var(--green);
+  border-bottom:1px solid var(--white);
+}
+
+.input-search{
+  width: 30%;
+  border: none;
+  border-radius: 0 0 0 10px;
+  padding: 2px;
+  
+}
+
+.input-sumbit{
+  margin-left: 5px;
+  border: none;
+  border-radius: 0 10px 0 0;
+  padding: 2px;
+  background-color: var(--green);
+  color: var(--blue);
+  width: 10%;
+}
+nav {
+  margin-top: 15px;
+}
+
+nav ul {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+nav ul li a:hover {
+  border-buttom: 4px solid var(--white)
+  
+}
+nav ul li a{
+  color: var(--green);
+}
+
+
+
+.populer{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.populer img{
+   border-radius: 15px;
+}
